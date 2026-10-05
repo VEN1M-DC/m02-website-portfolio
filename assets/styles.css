@@ -20,7 +20,7 @@ h1,h2,h3 { line-height:1.12; }
 h1,.display-heading { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacing:-.04em; }
 h1 { font-size:clamp(2.65rem,6vw,5.5rem); max-width:13ch; }
 h2 { font-size:1.7rem; letter-spacing:-.03em; }
-.hero { padding:5.5rem 0 4.5rem; }
+.hero { padding:5.5rem .75rem 4.5rem; }
 .hero-copy { max-width:34rem; }
 .lead { font-size:1.18rem; color:var(--muted); }
 .hero-art { width:100%; border-radius:1rem; border:1px solid var(--line); }
@@ -28,11 +28,11 @@ h2 { font-size:1.7rem; letter-spacing:-.03em; }
 .btn { padding:.8rem 1.25rem; border-radius:4px; font-weight:700; min-height:44px; }
 .btn-primary { --bs-btn-bg:#214e40; --bs-btn-border-color:#214e40; --bs-btn-hover-bg:#16382d; --bs-btn-hover-border-color:#16382d; --bs-btn-active-bg:#16382d; --bs-btn-active-border-color:#16382d; }
 .btn-outline-primary { --bs-btn-color:#214e40; --bs-btn-border-color:#214e40; --bs-btn-hover-bg:#214e40; --bs-btn-hover-border-color:#214e40; --bs-btn-active-bg:#214e40; --bs-btn-active-border-color:#214e40; }
-.section-rule { border-top:1px solid var(--line); padding:3rem 0 4rem; }
+.section-rule { border-top:1px solid var(--line); padding:3rem .75rem 4rem; }
 .study-number { display:block; font-family:Georgia,serif; color:#52665d; margin-bottom:1rem; }
 .study h3 { font-size:1.2rem; }
 .study p { color:var(--muted); max-width:31rem; }
-.page-intro { padding:4.5rem 0 3rem; }
+.page-intro { padding:4.5rem .75rem 3rem; }
 .page-intro h1 { max-width:18ch; font-size:clamp(2.7rem,6vw,4.6rem); }
 .page-intro p:last-child { max-width:43rem; }
 /* Bootstrap columns stack automatically; cards grow with text instead of clipping. */
@@ -55,6 +55,6 @@ footer a { padding:.6rem 0; display:inline-block; }
 img { max-width:100%; height:auto; }
 p,a,h1,h2 { overflow-wrap:anywhere; }
 /* Wide g-5 gutters exceed the container padding on phones; narrow them at this breakpoint. */
-@media(max-width:767px) { .row { --bs-gutter-x:1.5rem; } .hero { padding:3rem 0; } .page-intro { padding:3rem 0 2rem; } .nav-inner { justify-content:center!important; } .navbar-brand { margin-right:0; } .card-body { padding:1.3rem; } }
+@media(max-width:767px) { .row { --bs-gutter-x:1.5rem; } .hero { padding:3rem .75rem; } .page-intro { padding:3rem .75rem 2rem; } .nav-inner { justify-content:center!important; } .navbar-brand { margin-right:0; } .card-body { padding:1.3rem; } }
 /* Respect the operating system's reduced-motion preference. */
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }
