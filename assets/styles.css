@@ -54,6 +54,7 @@ footer a { padding:.6rem 0; display:inline-block; }
 /* Images and long names remain within the viewport at zoom and on small screens. */
 img { max-width:100%; height:auto; }
 p,a,h1,h2 { overflow-wrap:anywhere; }
-@media(max-width:767px) { .hero { padding:3rem 0; } .page-intro { padding:3rem 0 2rem; } .nav-inner { justify-content:center!important; } .navbar-brand { margin-right:0; } .card-body { padding:1.3rem; } }
+/* Wide g-5 gutters exceed the container padding on phones; narrow them at this breakpoint. */
+@media(max-width:767px) { .row { --bs-gutter-x:1.5rem; } .hero { padding:3rem 0; } .page-intro { padding:3rem 0 2rem; } .nav-inner { justify-content:center!important; } .navbar-brand { margin-right:0; } .card-body { padding:1.3rem; } }
 /* Respect the operating system's reduced-motion preference. */
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }
