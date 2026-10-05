@@ -1,0 +1,59 @@
+/* Named colors keep contrast decisions consistent across every page. */
+:root { --paper:#f8f6ee; --ink:#183d33; --muted:#52665d; --line:#cbd1c2; --accent:#ead078; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; font-size:1.0625rem; line-height:1.7; }
+a { color:#245846; text-underline-offset:.22em; }
+a:hover { color:#102c23; }
+/* A two-color focus ring remains visible on light and dark surfaces. */
+:focus-visible { outline:3px solid #143d30; outline-offset:5px; box-shadow:0 0 0 5px #fff; }
+/* Keyboard users reach the main landmark without repeating navigation. */
+.skip-link { position:absolute; left:1rem; top:-6rem; background:#fff; color:#173e34; padding:.75rem 1rem; z-index:100; }
+.skip-link:focus { top:1rem; }
+#site-header { border-bottom:1px solid var(--line); }
+.navbar { padding:1.25rem 0; }
+.nav-inner { gap:1rem; }
+.navbar-brand { color:var(--ink); display:flex; align-items:center; gap:.65rem; font-weight:700; font-size:1rem; white-space:normal; }
+.brand-mark { display:inline-grid; place-items:center; width:42px; height:42px; background:var(--ink); color:#fff; border-radius:50%; font-family:Georgia,serif; font-size:1.5rem; }
+.nav-link { color:var(--ink); padding:.6rem .9rem; min-height:44px; }
+.nav-link:hover,.nav-link.active { color:var(--ink); text-decoration:underline; text-decoration-thickness:2px; }
+.eyebrow { font-size:.76rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:1.2rem; }
+h1,h2,h3 { line-height:1.12; }
+h1,.display-heading { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacing:-.04em; }
+h1 { font-size:clamp(2.65rem,6vw,5.5rem); max-width:13ch; }
+h2 { font-size:1.7rem; letter-spacing:-.03em; }
+.hero { padding:5.5rem 0 4.5rem; }
+.hero-copy { max-width:34rem; }
+.lead { font-size:1.18rem; color:var(--muted); }
+.hero-art { width:100%; border-radius:1rem; border:1px solid var(--line); }
+.art-caption { font-size:.78rem; color:var(--muted); margin-top:.65rem; }
+.btn { padding:.8rem 1.25rem; border-radius:4px; font-weight:700; min-height:44px; }
+.btn-primary { --bs-btn-bg:#214e40; --bs-btn-border-color:#214e40; --bs-btn-hover-bg:#16382d; --bs-btn-hover-border-color:#16382d; --bs-btn-active-bg:#16382d; --bs-btn-active-border-color:#16382d; }
+.btn-outline-primary { --bs-btn-color:#214e40; --bs-btn-border-color:#214e40; --bs-btn-hover-bg:#214e40; --bs-btn-hover-border-color:#214e40; --bs-btn-active-bg:#214e40; --bs-btn-active-border-color:#214e40; }
+.section-rule { border-top:1px solid var(--line); padding:3rem 0 4rem; }
+.study-number { display:block; font-family:Georgia,serif; color:#52665d; margin-bottom:1rem; }
+.study h3 { font-size:1.2rem; }
+.study p { color:var(--muted); max-width:31rem; }
+.page-intro { padding:4.5rem 0 3rem; }
+.page-intro h1 { max-width:18ch; font-size:clamp(2.7rem,6vw,4.6rem); }
+.page-intro p:last-child { max-width:43rem; }
+/* Bootstrap columns stack automatically; cards grow with text instead of clipping. */
+.card { background:#fffdf7; border:1px solid var(--line); border-radius:.6rem; overflow:hidden; }
+.card-img-top { aspect-ratio:3/2; object-fit:cover; }
+.card-body { padding:1.8rem; }
+.card h2 { font-family:Georgia,serif; font-size:2rem; }
+.tag { display:inline-block; color:#345744; background:#e5eadd; padding:.2rem .6rem; font-size:.78rem; margin:0 .3rem .5rem 0; border-radius:3px; }
+.project-meta { font-size:.87rem; color:var(--muted); }
+.project-link { display:inline-block; padding:.55rem 0; font-weight:700; }
+.note { border-left:3px solid #9a7a20; padding:.75rem 1.1rem; margin:2.2rem 0 3.5rem; max-width:52rem; }
+.about-grid { padding-bottom:4rem; }
+.step { padding:1rem 0; border-bottom:1px solid var(--line); }
+.step h3 { font-size:1.15rem; }
+.list-group-item { background:transparent; border-color:var(--line); padding:1rem 0; color:var(--ink); }
+.resource-note { display:block; color:var(--muted); font-size:.88rem; }
+footer { border-top:1px solid var(--line); padding:1.7rem 0; color:var(--muted); font-size:.85rem; }
+footer a { padding:.6rem 0; display:inline-block; }
+/* Images and long names remain within the viewport at zoom and on small screens. */
+img { max-width:100%; height:auto; }
+p,a,h1,h2 { overflow-wrap:anywhere; }
+@media(max-width:767px) { .hero { padding:3rem 0; } .page-intro { padding:3rem 0 2rem; } .nav-inner { justify-content:center!important; } .navbar-brand { margin-right:0; } .card-body { padding:1.3rem; } }
+/* Respect the operating system's reduced-motion preference. */
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }

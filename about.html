@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- The viewport permits natural responsive sizing without disabling zoom. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The learning approach and official development resources behind Isa’s student portfolio.">
+  <title>About | Isa Samiezade-Yazd</title>
+  <!-- Local Bootstrap assets keep layout independent of a third-party CDN. -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="data:,">
+  <script src="assets/navigation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <!-- These links remain usable until nav.html loads, or if JavaScript is unavailable. -->
+  <header id="site-header"><nav class="navbar" aria-label="Main navigation"><div class="container nav-inner"><a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">is.</span> Isa Samiezade-Yazd</a><ul class="nav gap-1"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li></ul></div></nav></header>
+  <!-- One main landmark and one H1 give assistive technology a clear starting point. -->
+  <main id="main-content" tabindex="-1">
+    <section class="container page-intro" aria-labelledby="about-title"><p class="eyebrow">Behind the work</p><h1 id="about-title">Make it clear.<br>Keep improving.</h1><p class="lead mt-3">I’m studying the foundations of web development: how a page is structured, how an application is organized, and how people move through an interface.</p></section>
+    <div class="container about-grid"><div class="row g-5">
+      <section class="col-lg-6" aria-labelledby="approach-title"><h2 id="approach-title">A practical approach</h2><p>This portfolio brings those topics together in a small, readable site. Its three pages share navigation and use the same spacing, colors, and content structure.</p><div class="step"><h3>01 / Build with purpose</h3><p>Give each page a clear role. Use headings and HTML landmarks to organize the content.</p></div><div class="step"><h3>02 / Test the experience</h3><p>Check the layout on narrow screens, follow links, and move through the page with a keyboard.</p></div><div class="step"><h3>03 / Revise and record</h3><p>Address problems, document the decisions, and save meaningful changes with Git.</p></div></section>
+      <section class="col-lg-6" id="resources" aria-labelledby="resources-title"><h2 id="resources-title">Resources I can return to</h2><p>Official references for the tools and techniques used in this coursework.</p>
+        <!-- Descriptive link text communicates a destination without relying on nearby text. -->
+        <ul class="list-group list-group-flush"><li class="list-group-item"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML documentation</a><span class="resource-note">Elements, semantics, and the structure of a page.</span></li><li class="list-group-item"><a href="https://getbootstrap.com/docs/5.3/">Bootstrap documentation</a><span class="resource-note">Responsive grids and reusable components.</span></li><li class="list-group-item"><a href="https://www.w3.org/WAI/tutorials/">W3C accessibility tutorials</a><span class="resource-note">Guidance for more inclusive interfaces.</span></li><li class="list-group-item"><a href="https://docs.djangoproject.com/en/5.2/">Django documentation</a><span class="resource-note">Framework concepts, setup, and application structure.</span></li><li class="list-group-item"><a href="https://docs.github.com/en/pages">GitHub Pages documentation</a><span class="resource-note">Publishing a static website from a repository.</span></li></ul>
+      </section>
+    </div></div>
+  </main>
+  <footer><div class="container d-flex flex-wrap justify-content-between align-items-center gap-2"><span>Isa Samiezade-Yazd · Student portfolio · 2026</span><a href="https://github.com/VEN1M-DC">Find my work on GitHub <span aria-hidden="true">↗</span></a></div></footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- The viewport permits natural responsive sizing without disabling zoom. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A student portfolio exploring Python, Django, documentation, and accessible web development.">
+  <title>Home | Isa Samiezade-Yazd</title>
+  <!-- Local Bootstrap assets keep layout independent of a third-party CDN. -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="data:,">
+  <script src="assets/navigation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <!-- These links remain usable until nav.html loads, or if JavaScript is unavailable. -->
+  <header id="site-header"><nav class="navbar" aria-label="Main navigation"><div class="container nav-inner"><a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">is.</span> Isa Samiezade-Yazd</a><ul class="nav gap-1"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li></ul></div></nav></header>
+  <!-- One main landmark and one H1 give assistive technology a clear starting point. -->
+  <main id="main-content" tabindex="-1">
+    <section class="hero container" aria-labelledby="intro-title">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 hero-copy">
+          <p class="eyebrow">A portfolio of learning &amp; building</p>
+          <h1 id="intro-title">Clear code.<br>Thoughtful web.</h1>
+          <p class="lead mt-4">Hi, I’m Isa. My coursework explores Python, Django, and accessible web development. This is a place to connect the concepts with the work.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4"><a class="btn btn-primary" href="projects.html">Explore my projects <span aria-hidden="true">↗</span></a><a class="btn btn-outline-primary" href="about.html">About my approach</a></div>
+        </div>
+        <div class="col-lg-6">
+          <figure class="mb-0"><img class="hero-art" src="assets/images/web-workbench.png" width="1200" height="800" alt="Browser diagram combining readable content, a code panel, and a build, test, revise cycle."><figcaption class="art-caption">A small idea, made useful through code and care.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="container section-rule study" aria-labelledby="study-title">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4"><h2 id="study-title">What I’m working with</h2><a href="about.html#resources">Explore the learning resources</a></div>
+      <!-- Three Bootstrap grid columns become a single readable stack on mobile. -->
+      <div class="row g-4"><div class="col-md-4"><span class="study-number">01 / Foundations</span><h3>Python &amp; Django</h3><p>Language fundamentals, isolated environments, and the structure behind a web application.</p></div><div class="col-md-4"><span class="study-number">02 / The interface</span><h3>HTML &amp; Bootstrap</h3><p>Meaningful page structure and responsive layouts that adapt to the space available.</p></div><div class="col-md-4"><span class="study-number">03 / The experience</span><h3>Accessible design</h3><p>Clear navigation, readable content, and keyboard access built into the page.</p></div></div>
+    </section>
+  </main>
+  <footer><div class="container d-flex flex-wrap justify-content-between align-items-center gap-2"><span>Isa Samiezade-Yazd · Student portfolio · 2026</span><a href="https://github.com/VEN1M-DC">Find my work on GitHub <span aria-hidden="true">↗</span></a></div></footer>
+</body>
+</html>

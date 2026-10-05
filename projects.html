@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- The viewport permits natural responsive sizing without disabling zoom. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Individual and collaborative course documentation projects by Isa Samiezade-Yazd.">
+  <title>Projects | Isa Samiezade-Yazd</title>
+  <!-- Local Bootstrap assets keep layout independent of a third-party CDN. -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="data:,">
+  <script src="assets/navigation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <!-- These links remain usable until nav.html loads, or if JavaScript is unavailable. -->
+  <header id="site-header"><nav class="navbar" aria-label="Main navigation"><div class="container nav-inner"><a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">is.</span> Isa Samiezade-Yazd</a><ul class="nav gap-1"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li></ul></div></nav></header>
+  <!-- One main landmark and one H1 give assistive technology a clear starting point. -->
+  <main id="main-content" tabindex="-1">
+    <section class="container page-intro" aria-labelledby="projects-title"><p class="eyebrow">Selected coursework / 01–02</p><h1 id="projects-title">Learning, in practice.</h1><p class="lead mt-3">Two documentation projects that turn web development concepts into examples, explanations, and a reference for the next build.</p></section>
+    <section class="container" aria-label="Featured projects"><div class="row g-4">
+      <!-- Each article groups one project's image, scope, attribution, and source. -->
+      <div class="col-md-6"><article class="card h-100"><img class="card-img-top" src="assets/images/individual-notes.png" width="1200" height="800" alt="Three sections of a documentation notebook: Python, HTML and CSS, and accessibility."><div class="card-body d-flex flex-column"><p class="project-meta">01 / Individual course reference</p><h2>Advanced Django Docs</h2><div class="mt-2"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">Documentation</span></div><p class="mt-2">A personal collection of course notes covering Python fundamentals, virtual environments, Django setup, semantic HTML, accessibility, and Bootstrap.</p><p><strong>Project focus:</strong> organize commands, examples, and troubleshooting notes so the material is easier to revisit.</p><p class="project-meta">This is a documentation project; it is not presented as a deployed Django application.</p><a class="project-link mt-auto" href="https://github.com/VEN1M-DC/ISA_Advanced-Django-Docs">View individual documentation <span aria-hidden="true">↗</span></a></div></article></div>
+      <div class="col-md-6"><article class="card h-100"><img class="card-img-top" src="assets/images/shared-notes.png" width="1200" height="800" alt="Three contributors connected to a shared documentation hub."><div class="card-body d-flex flex-column"><p class="project-meta">02 / Collaborative course reference</p><h2>Team knowledge base</h2><div class="mt-2"><span class="tag">Git &amp; GitHub</span><span class="tag">HTML &amp; CSS</span><span class="tag">Collaboration</span></div><p class="mt-2">A shared reference covering development tools, Python, and web foundations, with contributor credits retained in the repository.</p><p><strong>My role:</strong> contributions credited to Isa Samiezade-Yazd in the course documentation. The repository includes work by other contributors.</p><p class="project-meta">Shared ownership is part of the project; the full repository is not claimed as individual work.</p><a class="project-link mt-auto" href="https://github.com/Ninigth/Advanced-Django-Docs">View team documentation <span aria-hidden="true">↗</span></a></div></article></div>
+    </div><p class="note">These references connect to this portfolio through semantic HTML, a responsive Bootstrap layout, and accessibility checks. <a href="about.html">Read about the approach.</a></p></section>
+  </main>
+  <footer><div class="container d-flex flex-wrap justify-content-between align-items-center gap-2"><span>Isa Samiezade-Yazd · Student portfolio · 2026</span><a href="https://github.com/VEN1M-DC">Find my work on GitHub <span aria-hidden="true">↗</span></a></div></footer>
+</body>
+</html>
