@@ -2,7 +2,7 @@
 async function loadNavigation() {
   const header = document.querySelector('#site-header');
   try {
-    const response = await fetch('nav.html');
+    const response = await fetch('nav.html', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`Navigation HTTP ${response.status}`);
     const html = await response.text();
     // The fragment is our own same-origin static file, never user input.
